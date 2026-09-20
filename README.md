@@ -1,7 +1,7 @@
 
-Email: ailton.xavier.junior@gmail.com
-Telefone: (21) 97999-9817 | (21) 96689-4472
-Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/
+Email: ailton.xavier.junior@gmail.com  | 
+Telefone: (21) 97999-9817 | (21) 96689-4472 | 
+Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/ |
 
 Olá meu nome é Ailton Xavier, sou desenvolvedor .Net C# / Angular 10+, e estou criando esse projeto para mostrar os conhecimentos adquiridos.
 Nesse projeto eu vou usar as tecnologias:
@@ -24,7 +24,7 @@ Nesse projeto eu vou usar as tecnologias:
 
 
 ##############################
--- Instruções
+-- Instruções -- 
 ##############################
 
  1º Etapa
