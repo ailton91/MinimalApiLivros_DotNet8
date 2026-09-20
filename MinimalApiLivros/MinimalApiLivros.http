@@ -1,0 +1,11 @@
+@MinimalApiLivros_HostAddress = http://localhost:5246
+
+GET {{MinimalApiLivros_HostAddress}}/swagger/
+Accept: application/json
+
+###
+
+GET {{MinimalApiLivros_HostAddress}}/swagger/1
+Accept: application/json
+
+###
