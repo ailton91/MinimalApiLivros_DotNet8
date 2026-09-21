@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MinimalApiLivros.Application/MinimalApiLivros.Application.csproj" />
+  <Project Path="MinimalApiLivros.Domain/MinimalApiLivros.Domain.csproj" />
+  <Project Path="MinimalApiLivros.Infrastructure/MinimalApiLivros.Infrastructure.csproj" />
+  <Project Path="MinimalApiLivros/MinimalApiLivros.API.csproj" />
+</Solution>
