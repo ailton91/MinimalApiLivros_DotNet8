@@ -1,22 +1,31 @@
-
-Email: ailton.xavier.junior@gmail.com  | 
-
-Telefone: (21) 97999-9817 | (21) 96689-4472 | 
-
-Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/ |
-
 Olá meu nome é Ailton Xavier, sou desenvolvedor .Net C# / Angular 10+, e estou criando esse projeto para mostrar os conhecimentos adquiridos.
+
+Email: ailton.xavier.junior@gmail.com
+
+Telefone: (21) 97999-9817 | (21) 96689-4472
+
+Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/
+
 Nesse projeto eu vou usar as tecnologias:
 
 • .NET 8
+
 • EF Core 8 - Migration
+
 • MySQL
+
 • Clean Architecture
+
 • CQRS
+
 • FluentValidation
+
 • DDD
+
 • SOLID
+
 • Assíncrono - Async Task<>
+
 • Serilog ( LogsErro salvos em arquivos.txt e banco de dados )
 
 • Minimal API
