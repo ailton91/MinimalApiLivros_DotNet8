@@ -33,13 +33,13 @@ jobs:
         run: dotnet test MinimalApiLivros.TesteXUnit/MinimalApiLivros.TesteXUnit.csproj --configuration Release --no-build
 
       - name: Publish API project
-        run: dotnet publish MinimalApiLivros/MinimalApiLivros.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp --no-build
+        run: dotnet publish ./MinimalApiLivros/MinimalApiLivros.csproj -c Release -o ./publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ./publish
 
   deploy:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E9C458D8053A4692A92B8F73DA84E2E3 }}
+            client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E9C458D8053A4692A92B8F73DA84E2E3 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_722E408EC0374B34BA53FD588A1DFE5A }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_937E56FC3E2E43D180204AA28390702C }}
 
