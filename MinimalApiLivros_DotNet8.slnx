@@ -2,5 +2,6 @@
   <Project Path="MinimalApiLivros.Application/MinimalApiLivros.Application.csproj" />
   <Project Path="MinimalApiLivros.Domain/MinimalApiLivros.Domain.csproj" />
   <Project Path="MinimalApiLivros.Infrastructure/MinimalApiLivros.Infrastructure.csproj" />
+  <Project Path="MinimalApiLivros.TesteXUnit/MinimalApiLivros.TesteXUnit.csproj" Id="e0c1fc79-3295-448e-acc3-b42ce81e6e8d" />
   <Project Path="MinimalApiLivros/MinimalApiLivros.API.csproj" />
 </Solution>
