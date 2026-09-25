@@ -51,21 +51,39 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 
 builder.Host.UseSerilog();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+
 var app = builder.Build();
 
 app.UseStaticFiles();
 
 if (app.Environment.IsDevelopment())
 { 
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-        c.InjectStylesheet("/css/swagger-dark.css");
-    });
+    
 }
 
+app.UseSwagger();
+
+app.UseSwaggerUI(c =>
+{
+    //c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minimal API Livros v1");
+    c.RoutePrefix = string.Empty; // Isso faz o Swagger abrir direto na URL principal!
+    c.InjectStylesheet("/css/swagger-dark.css");
+});
+
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
 
 app.MapPost("/Livros", async ([FromBody]CriarLivroCommand command, ILivroService livroService, CancellationToken cancellationToken = default) =>
 {
