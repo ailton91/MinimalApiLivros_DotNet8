@@ -6,6 +6,8 @@ Telefone: (21) 97999-9817 | (21) 96689-4472
 
 Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/
 
+Azure Devops: https://minimalapilivros-a4gcdxbegmecdmg4.centralus-01.azurewebsites.net/swagger/index.html
+
 Nesse projeto eu vou usar as tecnologias:
 
 • .NET 8
