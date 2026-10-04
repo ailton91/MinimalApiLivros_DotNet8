@@ -6,13 +6,21 @@ Telefone: (21) 97999-9817 | (21) 96689-4472
 
 Linkedin: https://www.linkedin.com/in/ailton-xavier-da-silva-junior-2722bb86/
 
+Repositórios: https://github.com/ailton91
+
+CI/CD: Github
+
+Azure Devops (Nativo): https://minimalapilivros-a4gcdxbegmecdmg4.centralus-01.azurewebsites.net/swagger/index.html
+
+Oracle Cloud (Linux): http://132.145.205.35:5000/swagger/index.html
+
 Nesse projeto eu vou usar as tecnologias:
 
 • .NET 8
 
-• EF Core 8 - Migration
+• Entity Framework Core 8 - Migration
 
-• MySQL
+• MySQL / InMemory
 
 • Clean Architecture
 
@@ -33,6 +41,7 @@ Nesse projeto eu vou usar as tecnologias:
 
 • Bearer Token
 
+• Azure Devops / Oracle Cloud
 
 ##############################
 -- Instruções -- 
