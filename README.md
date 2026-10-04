@@ -18,7 +18,7 @@ Nesse projeto eu vou usar as tecnologias:
 
 • .NET 8
 
-• EF Core 8 - Migration
+• Entity Framework Core 8 - Migration
 
 • MySQL / InMemory
 
