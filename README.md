@@ -43,6 +43,8 @@ Nesse projeto eu vou usar as tecnologias:
 
 • Azure Devops / Oracle Cloud
 
+• xUnit - Test Unitário / Stryker Test Mutant
+
 ##############################
 -- Instruções -- 
 ##############################
