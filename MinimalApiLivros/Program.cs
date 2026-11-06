@@ -61,7 +61,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     {
         // Define uma versão fixa do MariaDB/MySQL em vez de AutoDetect para evitar Ping no Startup
         //options.UseMySql(mySqlConnection, new MySqlServerVersion(new Version(8, 0, 31)));
-        options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
+        options.UseInMemoryDatabase("DbLivrosInMemory");
+        //options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
     }
     else
     {
