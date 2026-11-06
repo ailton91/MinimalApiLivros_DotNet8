@@ -4,6 +4,7 @@ using MinimalApiLivros.Application.AppLivro.Commands;
 using MinimalApiLivros.Application.AppLivro.Queries;
 using MinimalApiLivros.Application.IRepository;
 using MinimalApiLivros.Domain.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MinimalApiLivros.Application.AppLivro.Services
 {
@@ -75,7 +76,7 @@ namespace MinimalApiLivros.Application.AppLivro.Services
             }            
         }
 
-        public async Task<Livro> AdicionarLivroAsync(CriarLivroCommand command,CancellationToken cancellationToken = default)
+        public async Task<Livro> AdicionarLivroAsync(CriarLivroCommand command, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -93,12 +94,8 @@ namespace MinimalApiLivros.Application.AppLivro.Services
                     throw new ArgumentException("Dados do livro inválidos.");
                 }
 
+                // A validação de Titulo e Autor é feita pelo construtor de Livro
                 Livro novoLivro = new Livro(command.Titulo!, command.Autor!);
-
-                if (novoLivro == null) { 
-                    this._logger.LogWarning("AdicionarLivroAsync - Não foi possível criar o livro. ( Título: {Titulo}, Autor: {Autor} ) ", command.Titulo, command.Autor);
-                    throw new ArgumentException("Não foi possível criar o livro.");
-                }
 
                 Livro response = await _livroRepository.AddLivroAsync(novoLivro, cancellationToken);
 
@@ -111,7 +108,6 @@ namespace MinimalApiLivros.Application.AppLivro.Services
                 this._logger.LogError("AdicionarLivroAsync - Erro ao adicionar livro. ( Error: {exMessage} ) ", ex.Message);
                 throw;
             }
-            
         }
 
         public async Task<Livro> AtualizarLivroAsync(int id, AtualizarLivroCommand command, CancellationToken cancellationToken = default)

@@ -1,0 +1,21 @@
+{
+  "stryker-config": {
+    "mutate": [
+      "Entities/**/*.cs"
+    ],
+    "ignore-methods": [
+      "*LogInformation*",
+      "*LogWarning*",
+      "*LogError*",
+      "*ArgumentException*"
+    ],
+    "ignore-mutations": [
+      "String"
+    ],
+    "reporters": [
+      "html",
+      "progress"
+    ],
+    "concurrency": 4
+  }
+}
