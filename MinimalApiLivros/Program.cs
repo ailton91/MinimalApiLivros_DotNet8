@@ -128,7 +128,7 @@ app.MapPost("/Livros", async ([FromBody] CriarLivroCommand command, ILivroServic
     .WithOpenApi(x => new Microsoft.OpenApi.Models.OpenApiOperation(x)
     {
         Summary = "Adiciona um novo livro",
-        Description = "Adiciona um novo livro ao banco de dados MySql - DbLivros",
+        Description = "Adiciona um novo livro ao banco de dados (Banco MySql)",
         Tags = new List<OpenApiTag> { new OpenApiTag { Name = "Minha Biblioteca" } }
     });
 
